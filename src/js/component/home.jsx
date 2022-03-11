@@ -1,46 +1,43 @@
 import React from "react";
+import {
+	Card,
+	Button,
+	Navbar,
+	Container,
+	Form,
+	Offcanvas,
+	Nav,
+	NavDropdown,
+	FormControl,
+} from "react-bootstrap";
+
+import Cardkim from "./Cardkim.jsx";
 
 const Home = () => {
 	return (
 		<div>
-			<div className="d-flex flex-wrap justify-content-end bg-dark py-3 mb-4 border-bottom">
-				<a
-					href="/"
-					className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-					<svg className="bi me-2" width="40" height="32"></svg>
-					<div className="fs-4">Start Bootstrap</div>
-				</a>
-
-				<ul className="nav nav-pills m-1">
-					<li className="nav-item">
-						<a href="#" className="nav-link " aria-current="page">
-							Home
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="#" className="nav-link">
-							Features
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="#" className="nav-link">
-							Pricing
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="#" className="nav-link">
-							FAQs
-						</a>
-					</li>
-					<li className="nav-item">
-						<a href="#" className="nav-link">
-							About
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<div className="p-5 mb-4 bg-light rounded-3 m-5">
+			<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+				<Container>
+					<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+					<Navbar.Collapse
+						className="justify-content-end"
+						id="responsive-navbar-nav ">
+						<Nav className="navbar-nav mb-2 mb-lg-0">
+							<Nav>
+								<Nav.Link href="#deets">More deets</Nav.Link>
+								<Nav.Link href="#deets">More deets</Nav.Link>
+								<Nav.Link href="#deets">More deets</Nav.Link>
+								<Nav.Link eventKey={2} href="#memes">
+									Dank memes
+								</Nav.Link>
+							</Nav>
+						</Nav>
+					</Navbar.Collapse>
+				</Container>
+			</Navbar>
+			<div className="container">
+				<div className="p-1 mb-4 bg-light rounded-3">
 					<div className="container-fluid py-5">
 						<h1 className="display-5 fw-bold">Custom jumbotron</h1>
 						<p className="col-md-8 fs-4">
@@ -56,16 +53,17 @@ const Home = () => {
 						</button>
 					</div>
 				</div>
-				<div>
-				<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-					</div>
+				<div className="row">
+					<Cardkim />
+					<Cardkim />
+					<Cardkim />
+					<Cardkim />
+				</div>
+			</div>
+
+			<div className="container-fluid m-0">
+				<div className="d-flex justify-content-center bg-dark p-4 estilo">
+					Copyrigth
 				</div>
 			</div>
 		</div>
