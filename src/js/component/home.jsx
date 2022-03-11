@@ -1,15 +1,5 @@
 import React from "react";
-import {
-	Card,
-	Button,
-	Navbar,
-	Container,
-	Form,
-	Offcanvas,
-	Nav,
-	NavDropdown,
-	FormControl,
-} from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 import Cardkim from "./Cardkim.jsx";
 
@@ -18,18 +8,18 @@ const Home = () => {
 		<div>
 			<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 				<Container>
-					<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+					<Navbar.Brand href="#home">Start Bootstrap</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse
 						className="justify-content-end"
 						id="responsive-navbar-nav ">
 						<Nav className="navbar-nav mb-2 mb-lg-0">
 							<Nav>
-								<Nav.Link href="#deets">More deets</Nav.Link>
-								<Nav.Link href="#deets">More deets</Nav.Link>
-								<Nav.Link href="#deets">More deets</Nav.Link>
+								<Nav.Link href="#deets">Home</Nav.Link>
+								<Nav.Link href="#deets">About</Nav.Link>
+								<Nav.Link href="#deets">Services</Nav.Link>
 								<Nav.Link eventKey={2} href="#memes">
-									Dank memes
+									Contact
 								</Nav.Link>
 							</Nav>
 						</Nav>
@@ -62,7 +52,7 @@ const Home = () => {
 			</div>
 
 			<div className="container-fluid m-0">
-				<div className="d-flex justify-content-center bg-dark p-4 estilo">
+				<div className="row justify-content-center bg-dark mt-4 p-3 estilo">
 					Copyrigth
 				</div>
 			</div>
