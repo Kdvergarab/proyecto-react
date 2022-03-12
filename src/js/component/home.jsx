@@ -44,10 +44,27 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="row">
-					<Cardkim />
-					<Cardkim />
-					<Cardkim />
-					<Cardkim />
+					<Cardkim
+						titulo="Futurama"
+						descripcion="Accidentalmente el repartidor de pizza congelada, Fry se despierta 1000 años en el futuro, él es recibido por su único descendiente, un científico anciano y débil que es dueño de un servicio de despacho de carga."
+						imagen="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/article/60acb3b219fb73274924c0cc/futurama.jpeg"
+					/>
+
+					<Cardkim
+						titulo="The Simpsons"
+						descripcion="La comedia de dibujos animados se centra en una familia que vive en la ciudad de Springfield."
+						imagen="https://sire-media-foxes.fichub.com/generic/serie-main/473.1024x576.jpg"
+					/>
+					<Cardkim
+						titulo="Detective Conan"
+						descripcion="Detective Conan, también conocida como Case Closed, es una serie de manga atemporal y ocasionalmente anacrónica escrita e ilustrada por Gōshō Aoyama"
+						imagen="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/651f7505cbfb9937483979db26b40901d874440374ed142b19a902dcd5a19d18._V_SX1080_.jpg"
+					/>
+					<Cardkim
+						titulo="Pokemon"
+						descripcion="Los Pokémon son una clase de criaturas inspiradas en animales reales, insectos, objetos, plantas o criaturas mitológicas. Los jugadores toman el papel Entrenadores Pokémon, el objetivo es completar la Pokédex mediante la recopilación de todas las especies de Pokémon disponibles que se encuentran, entrenar un equipo de Pokémon"
+						imagen="https://media.vandal.net/i/1200x630/10-2021/2021105724573_1.jpg"
+					/>
 				</div>
 			</div>
 
